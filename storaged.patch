@@ -1,0 +1,10 @@
+diff --git a/system/sepolicy/private/storaged.te b/system/sepolicy/private/storaged.te
+index 9e0443fc..4f325560 100644
+--- a/system/sepolicy/private/storaged.te
++++ b/system/sepolicy/private/storaged.te
+@@ -64,3 +64,5 @@ allow storaged dumpstate:fifo_file write;
+ ###
+ neverallow storaged domain:process ptrace;
+ neverallow storaged self:capability_class_set *;
++
++allow storaged sysfs:file {read open getattr};

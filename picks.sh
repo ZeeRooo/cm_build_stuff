@@ -36,3 +36,5 @@ repopick 234319 # LocaleTracker: Add null check before accessing WifiManager
 repopick 232428 # su: strlcpy is always a friend
 
 repopick -t pie-battery-styles -e 227929
+
+git apply storaged.patch
