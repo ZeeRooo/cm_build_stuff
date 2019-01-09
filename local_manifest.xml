@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="haggertk/cm_build_stuff" path="haggertk" remote="github" >
-    <linkfile src="picks.sh" dest="picks.sh" />
-    <linkfile src="000_remotes.xml" dest=".repo/local_manifests/000_remotes.xml" />
-    <linkfile src="local_manifest.xml" dest=".repo/local_manifests/z00_local_manifest.xml" />
-    <linkfile src="local_devices.xml" dest=".repo/local_manifests/z01_local_devices.xml" />
-    <linkfile src="vendor.xml" dest=".repo/local_manifests/z02_vendor.xml" />
-  </project>
+	<!-- Device -->
+	<project name="oreo-surnia/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="8.1.x" />
+	<project name="ZeeRooo/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="lineage-16.0" />
+	<project name="ZeeRooo/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="github" revision="lineage-16.0" />
+	<project name="ZeeRooo/android_device_motorola_surnia" path="device/motorola/surnia" remote="github" revision="lineage-16.0" />
+  
+	<!-- Packages -->
+	<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0" />
 
-  <!-- LineageOS Infrastructure Stuff -->
+	<!-- System -->
+    <project path="system/qcom" name="LineageOS/android_system_qcom" groups="qcom" remote="github" revision="lineage-16.0" />
 
-  <project name="lineageos-infra/auth" path="lineage/infra/auth" remote="github" revision="master" />
-  <project name="LineageOS/infra/gerrit-config" path="lineage/infra/gerrit-config" remote="gitlab" revision="master" />
-
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0" />
 </manifest>
