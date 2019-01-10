@@ -7,6 +7,9 @@ repopick 237204 # selinux: move vendor_camera_prop to device/lineage/sepolicy
 repopick 237203 # selinux: snap: allow to read vendor camera props
 repopick 237205 # selinux: move vendor_camera_prop from device/qcom/sepolicy
 
+# device/qcom/sepolicy-legacy
+repopick 238636 # sepolicy: Add type vendor_display_prop for legacy devices
+
 # frameworks/base
 repopick 224266 # SystemUI: Add Lineage statusbar item holder
 repopick 224267 # SystemUI: Network Traffic [1/3]
