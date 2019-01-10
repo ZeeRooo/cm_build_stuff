@@ -34,8 +34,6 @@ repopick 230613 # Allow webview_zygote to read /dev/ion
 # vendor/lineage
 repopick 237352 # qcom: Mark some gralloc bits as valid
 
-repopick 234319 # LocaleTracker: Add null check before accessing WifiManager
-
 repopick 232428 # su: strlcpy is always a friend
 
 repopick -t pie-battery-styles -e 227929
