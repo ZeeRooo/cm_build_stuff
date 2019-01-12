@@ -4,11 +4,8 @@ source build/envsetup.sh
 # device/lineage/sepolicy
 repopick 236446 # common: Improve label of I/O sched tuning nodes
 repopick 237204 # selinux: move vendor_camera_prop to device/lineage/sepolicy
-repopick 237203 # selinux: snap: allow to read vendor camera props
+repopick 238588 # selinux: snap: allow to read vendor camera props
 repopick 237205 # selinux: move vendor_camera_prop from device/qcom/sepolicy
-
-# device/qcom/sepolicy-legacy
-repopick 238636 # sepolicy: Add type vendor_display_prop for legacy devices
 
 # frameworks/base
 repopick 224266 # SystemUI: Add Lineage statusbar item holder
@@ -34,8 +31,10 @@ repopick 230613 # Allow webview_zygote to read /dev/ion
 # vendor/lineage
 repopick 237352 # qcom: Mark some gralloc bits as valid
 
+# system/extras/su
 repopick 232428 # su: strlcpy is always a friend
 
 repopick -t pie-battery-styles -e 227929
 
+# system/sepolicy/private
 git apply storaged.patch
