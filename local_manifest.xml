@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<!-- Device -->
-	<project name="oreo-surnia/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="8.1.x" />
+	<project name="ZeeRooo/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="upstream" />
 	<project name="ZeeRooo/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="lineage-16.0" />
 	<project name="ZeeRooo/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="github" revision="lineage-16.0" />
 	<project name="ZeeRooo/android_device_motorola_surnia" path="device/motorola/surnia" remote="github" revision="lineage-16.0" />
